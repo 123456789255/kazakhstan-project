@@ -205,11 +205,14 @@ hr {
     background-color: white;
     padding: 20px;
     max-width: 500px;
-    width: 90%;
+    width: 80%;
+    height: 90%;
     border-radius: 8px;
     text-align: center;
     position: relative;
-    margin: 0 auto;
+    margin: 5% auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .modal-content img {
