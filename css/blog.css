@@ -1,0 +1,174 @@
+.blog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.blog-card {
+    border: 1px solid #ddd;
+    padding: 1rem 8px 2rem;
+    border-radius: 12px;
+    background: #f9f9f9;
+    width: 25%;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.blog-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.blog-card h2 {
+    font-size: 1.4em;
+}
+
+.blog-card a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.article-section,
+.blog-section {
+    padding-top: 87px;
+    min-height: calc(100vh - 87px);
+}
+
+.article-section img {
+    height: 50vh;
+    width: auto;
+    object-fit: contain;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.filters input,
+.filters select,
+.filters button {
+    padding: 8px 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#filters {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-top: 3rem;
+}
+
+#filters input,
+#filters select {
+    padding: 8px;
+    font-size: 16px;
+}
+
+.back {
+    color: #000;
+    text-decoration: none;
+}
+
+#main .container {
+    padding-top: 1rem;
+}
+
+#articleContent {
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+#articleContent p,
+#articleContent1 p {
+    margin: 0;
+}
+
+#articleContent1 {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+[data-tooltip] {
+    position: relative;
+    /* Относительное позиционирование */
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    /* Выводим текст */
+    position: absolute;
+    /* Абсолютное позиционирование */
+    left: 4.5rem;
+    top: 0;
+    /* Положение подсказки */
+    background: #ffffff;
+    /* Синий цвет фона */
+    color: #000000;
+    /* Цвет текста */
+    padding: 8px 16px;
+    /* Поля вокруг текста */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    /* Параметры тени */
+    pointer-events: none;
+    /* Подсказка */
+    opacity: 0;
+    /* Подсказка невидима */
+    transition: 0.3s;
+    /* Время появления подсказки */
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+[data-tooltip]:hover::after {
+    opacity: 0.8;
+    /* Показываем подсказку */
+    top: 2em;
+    /* Положение подсказки */
+}
+
+@media (max-width: 768px) {
+    .popup {
+        position: fixed;
+        overflow-x: hidden;
+        top: 83px !important;
+        left: -100%;
+        width: 100%;
+        height: calc(100vh - 83px) !important;
+        background: #fff;
+        z-index: 99;
+        display: flex !important;
+        transition: 0.3s;
+        align-items: start;
+        overflow-y: scroll;
+    }
+
+    .blog-card {
+        width: 40%;
+    }
+
+    .article-section img {
+        height: 50vh;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 600px) {
+    .blog-card {
+        width: 90% !important;
+    }
+}

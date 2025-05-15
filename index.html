@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Культурный гид по Казахстану</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta name="description" content="Каталог культурных мест Казахстана">
+    <link rel="icon" href="images/favicon.png">
+
+</head>
+
+<body id="wrapper">
+    <header id="header" class="section_2 w-100 pt-2 pb-2 z-index-100">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__wrap w-100">
+                    <a href="#main" class="logo">
+                        <!-- <img class="header__logo" src="img/ico/logo.png" alt="logo"> -->
+                        <h1>Культурный гид по Казахстану</h1>
+                    </a>
+                    <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                    <ul class="menu justify-content-end" id="menu">
+                        <li class="text-15px">
+                            <a class="resources link" href="#main">Главная</a>
+                        </li>
+                        <li class="text-15px">
+                            <a class="resources link" href="#places">Каталог</a>
+                        </li>
+                        <li class="text-15px">
+                            <a class="services link" href="#favorites">Избранное</a>
+                        </li>
+                        <li class="text-15px">
+                            <a class="services link" href="event.html">Афиша</a>
+                        </li>
+                        <li class="text-15px">
+                            <a class="services link" href="blog.html">Блог</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="popup" id="popup"></div>
+    </header>
+    <main id="main">
+        <section id="about">
+            <div class="container">
+                <div class="text">
+                    <h2>О проекте</h2>
+                    <p>Проект создан для того, чтобы рассказать о культурных и исторических местах Казахстана.</p>
+                </div>
+            </div>
+        </section>
+        <div class="top-to-bottom"></div>
+
+        <section id="favorites">
+            <div class="container">
+                <h2>Избранные места</h2>
+                <hr>
+                <div id="favorites-container"></div>
+            </div>
+        </section>
+
+        <section id="places">
+            <div class="container">
+                <h2>Популярные места</h2>
+                <hr>
+                <div id="filters" style="margin: 20px 0;">
+                    <input type="text" id="searchInput" placeholder="Поиск по названию" />
+                    <select id="regionFilter"></select>
+                    <select id="typeFilter"></select>
+
+                    <select id="ratingFilter">
+                        <option value="">Любой рейтинг</option>
+                        <option value="4">от 4</option>
+                        <option value="4.5">от 4.5</option>
+                        <option value="5">только 5</option>
+                    </select>
+                    <button id="resetButton">Сбросить фильтры</button>
+                </div>
+
+
+                <div id="places-container"></div> <!-- Карточки мест сюда -->
+            </div>
+        </section>
+        <hr class="ppp">
+        <section class="ooo">
+            <h1>В разработке...</h1>
+        </section>
+
+        <div id="modal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <img id="modal-img" src="" alt="">
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <p><strong>Регион:</strong> <span id="modal-region"></span></p>
+                <p><strong>Категория:</strong> <span id="modal-category"></span></p>
+                <p><strong>Рейтинг:</strong> ⭐ <span id="modal-rating"></span></p>
+                <button id="addToFavorites" class="favorite-btn">Добавить в избранное</button>
+                <button id="removeFromFavorites" class="favorite-btn hidden">Удалить из избранного</button>
+                <h4>Отзывы:</h4>
+                <div id="reviewsList"></div>
+
+                <form id="reviewForm">
+                    <input type="text" id="reviewAuthor" placeholder="Ваше имя" required />
+                    <textarea id="reviewText" placeholder="Ваш отзыв" required></textarea>
+                    <div class="ratingFilter">
+                        <label for="reviewRating">Оценка:</label>
+                        <select id="reviewRating">
+                            <option value="5">⭐️⭐️⭐️⭐️⭐️</option>
+                            <option value="4">⭐️⭐️⭐️⭐️</option>
+                            <option value="3">⭐️⭐️⭐️</option>
+                            <option value="2">⭐️⭐️</option>
+                            <option value="1">⭐️</option>
+                        </select>
+                    </div>
+                    <button type="submit">Оставить отзыв</button>
+                </form>
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+
+    <!-- Сначала данные -->
+    <script src="data/places.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Потом логика -->
+    <script type="module" src="scripts/index/main.js"></script>
+    <!-- <script src="scripts/main.js"></script> -->
+</body>
+
+</html>

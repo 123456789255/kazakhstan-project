@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Блог | Культурный гид по Казахстану</title>
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="description" content="Каталог культурных мест Казахстана">
+    <link rel="icon" href="../images/favicon.png">
+</head>
+
+<body>
+    <header id="header" class="section_2 w-100 pt-2 pb-2 z-index-100">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__wrap w-100">
+                    <a href="#main" class="logo">
+                        <h1>Блог</h1>
+                    </a>
+                    <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                    <ul class="menu justify-content-end" id="menu">
+                        <li class="text-15px">
+                            <a class="resources link" href="index.html">Главная</a>
+                        </li>
+                        <li class="text-15px">
+                            <a class="resources link" href="index.html#places">Каталог</a>
+                        </li>
+                        <li class="text-15px">
+                            <a class="services link" href="index.html#favorites">Избранное</a>
+                        </li>
+                        <li class="text-15px">
+                            <a class="services link" href="event.html">Афиша</a>
+                        </li>
+                        <li class="text-15px">
+                            <a class="services link" href="#main">Блог</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="popup" id="popup"></div>
+    </header>
+    <main id="main">
+        <section class="blog-section">
+            <div class="container">
+                <div id="filters">
+                    <input type="text" id="searchInput" placeholder="Поиск по названию..." />
+                    <select id="regionSelect"></select>
+                    <select id="citySelect"></select>
+                    <button id="resetFilters">Сбросить фильтры</button>
+                </div>
+                <div id="blogContainer" class="blog-grid"></div>
+            </div>
+        </section>
+        <!-- <section class="ooo">
+            <h1>Блог в разработке...</h1>
+            <a href="../index.html">Вернуться назад</a>
+        </section> -->
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <!-- Сначала данные -->
+    <script src="data/blog_items.js"></script>
+    <!-- Потом логика -->
+    <script src="scripts/pages/header.js"></script>
+    <script src="scripts/pages/blog.js"></script>
+</body>
+
+</html>

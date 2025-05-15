@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Афиша | Культурный гид по Казахстану</title>
+    <link rel="stylesheet" href="css/afisha.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="description" content="Каталог культурных мест Казахстана">
+    <link rel="icon" href="../images/favicon.png">
+</head>
+
+<body>
+    <header id="header" class="section_2 w-100 pt-2 pb-2 z-index-100">
+        <nav class="navbar">
+            <div class="container">
+                <div class="navbar__wrap w-100">
+                    <a href="#main" class="logo">
+                        <h1>Афиша</h1>
+                    </a>
+                    <div class="hamb">
+                        <div class="hamb__field" id="hamb">
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                            <span class="bar"></span>
+                        </div>
+                    </div>
+                    <ul class="menu justify-content-end" id="menu">
+                        <li class="text-15px">
+                            <a class="resources link" href="index.html">Главная</a>
+                        </li>
+                        <li class="text-15px">
+                            <a class="resources link" href="index.html#places">Каталог</a>
+                        </li>
+                        <li class="text-15px">
+                            <a class="services link" href="index.html#favorites">Избранное</a>
+                        </li>
+                        <li class="text-15px">
+                            <a class="services link" href="#main">Афиша</a>
+                        </li>
+                        <li class="text-15px">
+                            <a class="services link" href="blog.html">Блог</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="popup" id="popup"></div>
+    </header>
+    <main id="main">
+        <section class="afisha-list">
+            <div class="container">
+                <div id="filters">
+                    <input type="text" id="searchTitle" placeholder="Поиск по названию..." />
+                    <select id="regionFilter"></select>
+                    <input type="date" id="dateFilter" />
+                    <button id="resetButton">Сбросить фильтры</button>
+                </div>
+                <div id="eventsList" class="card-container"></div>
+            </div>
+        </section>
+        <!-- <section class="ooo" id="main">
+            <h1>Мероприятия в разработке...</h1>
+            <a href="../index.html">Вернуться назад</a>
+        </section> -->
+    </main>
+
+
+    <!-- Сначала данные -->
+    <script src="../data/events.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Потом логика -->
+    <script src="scripts/pages/header.js"></script>
+    <script src="scripts/pages/afisha.js"></script>
+</body>
+
+</html>
