@@ -8,7 +8,7 @@
 
 ## 🚀 Демо
 
-Проект размещён на [Netlify](https://kairbekoff-js-train-kazakhstan.netlify.app)  
+Проект размещён на [Netlify](https://kazakhstan-project.netlify.app/event)  
 
 ## 🛠 Основной функционал
 
