@@ -8,7 +8,7 @@
 
 ## 🚀 Демо
 
-Проект размещён на [Netlify](https://kazakhstan-project.netlify.app/event)  
+Проект размещён на [Netlify](https://kazakhstan-project.netlify.app/)  
 
 ## 🛠 Основной функционал
 
