@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         card.innerHTML = `
             <img src="${article.image}" alt="${article.title}">
+            <p>${new Date(article.date).toLocalDateString()}</p>
             <h2>${article.title}</h2>
             <p>${article.summary}</p>
             <a href="blog_item.html?id=${article.id}">Читать далее</a>
