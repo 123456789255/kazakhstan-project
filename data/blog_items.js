@@ -13,11 +13,11 @@
 `
 */
 const articles = [
-   {
+  {
     id: "31",
     date: "2025-05-15",
     title: "Это Жанат",
-    image: "",
+    image: "images/borovoe1305252002.webp",
     summary: "Да, я могу менять сайт прямо с телефона",
     region: "kairbekov",
     city: "kairbekov",

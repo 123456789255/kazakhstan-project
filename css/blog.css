@@ -8,7 +8,7 @@
 
 .blog-card {
     border: 1px solid #ddd;
-    padding: 1rem 8px 2rem;
+    padding: 1rem 1rem 2rem 1rem;
     border-radius: 12px;
     background: #f9f9f9;
     width: 25%;
@@ -16,6 +16,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 1rem;
 }
 
 .blog-card img {
@@ -26,6 +27,7 @@
 
 .blog-card h2 {
     font-size: 1.4em;
+    margin: 0;
 }
 
 .blog-card a {
@@ -33,6 +35,15 @@
     margin-top: 8px;
     color: #0077cc;
     text-decoration: none;
+    margin: 0;
+}
+
+.blog-card p {
+    margin: 0;
+}
+
+.blog-card-text{
+    padding: 0 0.5rem;
 }
 
 .article-section,

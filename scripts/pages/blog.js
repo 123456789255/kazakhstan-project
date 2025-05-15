@@ -27,10 +27,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
         card.innerHTML = `
             <img src="${article.image}" alt="${article.title}">
-            <p class="date"><strong>Дата:</strong> ${new Date(article.date).toLocaleDateString()}</p>
-            <h2>${article.title}</h2>
-            <p>${article.summary}</p>
-            <a href="blog_item.html?id=${article.id}">Читать далее</a>
+            <div class="blog-card-text">
+                <p class="date"><strong>Дата:</strong> ${new Date(article.date).toLocaleDateString()}</p>
+                <h2>${article.title}</h2>
+                <p>${article.summary}</p>
+                <a href="blog_item.html?id=${article.id}">Читать далее</a>
+            </div>
         `;
 
         return card;

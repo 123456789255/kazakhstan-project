@@ -4,7 +4,7 @@ const events = [
     title: "Фестиваль национальной кухни",
     description: "Погрузитесь в атмосферу традиционной кухни народов мира.",
     date: "2025-04-12",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Центральный паркasfasfdgfsfsdgf",
     region: "Восточно-Казахстанская область"
   },
@@ -13,7 +13,7 @@ const events = [
     title: "Концерт под открытым небом",
     description: "Выступление местных музыкальных групп.",
     date: "2025-06-03",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Площадь Независимости",
     region: "Алматы"
   },
@@ -22,7 +22,7 @@ const events = [
     title: "Ярмарка ремесел",
     description: "Продажа изделий ручной работы и мастер-классы от мастеров.",
     date: "2025-02-03",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Дом ремесел",
     region: "Абайская область"
   },
@@ -31,7 +31,7 @@ const events = [
     title: "Киноночь на свежем воздухе",
     description: "Просмотр фильмов на большом экране в парке.",
     date: "2025-06-05",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Парк Победы",
     region: "Все регионы"
   },
@@ -40,7 +40,7 @@ const events = [
     title: "Танцевальный баттл",
     description: "Соревнования среди уличных танцоров.",
     date: "2025-06-06",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Городской амфитеатр",
     region: "Западно-Казахстанская область"
   },
@@ -49,7 +49,7 @@ const events = [
     title: "Выставка картин молодых художников",
     description: "Современное искусство глазами молодежи.",
     date: "2025-06-07",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Галерея АртПространство",
     region: "Алматинская область"
   },
@@ -58,7 +58,7 @@ const events = [
     title: "День спорта",
     description: "Открытые тренировки и соревнования для всех желающих.",
     date: "2025-06-08",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Стадион 'Юность'",
     region: "Алматинская область"
   },
@@ -67,7 +67,7 @@ const events = [
     title: "Театральный уикенд",
     description: "Показы спектаклей от местных театров.",
     date: "2025-06-09",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Городской театр",
     region: "Туркестанская область"
   },
@@ -76,7 +76,7 @@ const events = [
     title: "Фестиваль уличной еды",
     description: "Лучшие фудтраки города в одном месте.",
     date: "2025-06-10",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Набережная",
     region: "Алматинская область"
   },
@@ -85,7 +85,7 @@ const events = [
     title: "Поэтический вечер",
     description: "Открытый микрофон для поэтов и чтецов.",
     date: "2025-06-11",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Культурный центр 'Диалог'",
     region: "Жамбылская область"
   },
@@ -94,7 +94,7 @@ const events = [
     title: "Историческая реконструкция",
     description: "Погружение в эпоху рыцарей и замков.",
     date: "2025-02-30",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Парк истории",
     region: "Астана"
   },
@@ -103,7 +103,7 @@ const events = [
     title: "Городская игра-квест",
     description: "Приключенческий маршрут по историческим улицам.",
     date: "2025-06-13",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Центр города",
     region: "Алматы"
   },
@@ -112,7 +112,7 @@ const events = [
     title: "Открытая лекция по астрономии",
     description: "Наблюдение за звездами и беседа с астрономом.",
     date: "2025-06-14",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Обсерватория",
     region: "Алматы"
   },
@@ -121,7 +121,7 @@ const events = [
     title: "Флешмоб добрых дел",
     description: "Социальная акция по помощи пожилым людям.",
     date: "2025-06-15",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Центр волонтеров",
     region: "Алматинская область"
   },
@@ -130,7 +130,7 @@ const events = [
     title: "Фестиваль воздушных змеев",
     description: "Запуск ярких воздушных змеев и конкурс на лучший.",
     date: "2025-06-16",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Луговая поляна",
     region: "Астана"
   },
@@ -139,7 +139,7 @@ const events = [
     title: "Ночной велопробег",
     description: "Маршрут по городу в сопровождении музыки и огней.",
     date: "2025-06-17",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Велотрек",
     region: "Алматинская область"
   },
@@ -148,7 +148,7 @@ const events = [
     title: "Школа выживания на природе",
     description: "Уроки туризма и выживания для всей семьи.",
     date: "2025-06-18",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Зеленый лес",
     region: "Акмолинская область"
   },
@@ -157,7 +157,7 @@ const events = [
     title: "Фестиваль настольных игр",
     description: "Игровые зоны и турниры по настольным играм.",
     date: "2025-06-19",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "ТЦ 'Орион'",
     region: "Туркестанская область"
   },
@@ -166,7 +166,7 @@ const events = [
     title: "Выставка старинных автомобилей",
     description: "Редкие машины и мотоциклы прошлого века.",
     date: "2025-06-20",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Автодром",
     region: "Алматинская область"
   },
@@ -175,7 +175,7 @@ const events = [
     title: "Фестиваль красок Холи",
     description: "Море цвета, музыки и веселья на свежем воздухе.",
     date: "2025-06-21",
-    image: "../images/borovoe1305252002.webp",
+    image: "images/borovoe1305252002.webp",
     location: "Парк 'Солнечный'",
     region: "Кызылординская область"
   }
