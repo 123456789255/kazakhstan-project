@@ -179,6 +179,15 @@ const placesData = [
     region: "Восточно-Казахстанская область",
     rating: 4.4,
     image: "images/borovoe1305252002.webp"
+  },
+  {
+    id: 21,
+    title: "Общий салам",
+    description: "Спасибо за внимание",
+    type: "kz",
+    region: "kz",
+    rating: 5.0,
+    image: "images/borovoe1305252002.webp"
   }
 ];
 
